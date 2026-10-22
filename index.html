@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <base href="/nesterka-2026-miniapp/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="description" content="Nesterka Fantasy — фэнтези-лига по квизам внутри Telegram.">
+  <meta name="theme-color" content="#00142F">
+  <meta name="color-scheme" content="dark light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Nesterka Fantasy">
+
+  <title>Nesterka Fantasy</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="loader.css" rel="stylesheet">
+
+  <!-- Telegram Mini App SDK: должен быть подключён до загрузки приложения. -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    /* Пока грузится Flutter, показываем фон в цвете бренда, чтобы не было белой вспышки. */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #00142F;
+      overscroll-behavior: none;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <div class="loader"></div>
+</body>
+
+</html>
